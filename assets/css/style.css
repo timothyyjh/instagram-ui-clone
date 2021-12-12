@@ -1,0 +1,133 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fafafa;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 20px;
+}
+
+.navigationList {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	border-top: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+}
+
+.navigationList__Item {
+	margin-right: 50px;
+	position: relative;
+	justify-content: center;
+}
+
+.navigationList__Item:last-child {
+	margin-right: 0;
+}
+
+.navigationList__Item__Text {
+	display: none;
+	margin-left: 6px;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 0.8px;
+	color: #ccc;
+}
+
+.navigationList__Item__Button {
+	padding: 12px 0;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.navigationList__Item__Icon {
+	width: 24px;
+	height: 24px;
+}
+
+.photosGrid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.photosGrid__Photo {
+	width: calc(33.3% - 2px);
+	height: 30vw;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 3px;
+}
+
+@media screen and (min-width: 736px) {
+
+	/* .navigationList {
+		border-top: solid 1px #ccc;
+		border-bottom: none;
+	} */
+
+	body {
+		padding: 20px;
+	}
+
+	.navigationList__Item__Button {
+		display: flex;
+		align-items: center;
+	}
+
+	.navigationList {
+		border-bottom: none;
+	}
+
+	.navigationList__Item__Text {
+		display: inline;
+	}
+
+	.navigationList__Item__Icon {
+
+	}
+
+	.navigationList__Item.active::before {
+	content: '';
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	background-color: black;
+	top: -1px;
+	right: 0px;
+	left: 0px;
+	}
+
+	.navigationList__Item.active .navigationList__Item__Text{
+		color: black;
+	}
+
+	.navigationList__Item.active .navigationList__Item__Icon path{
+		color: rgb(0, 149, 246);
+	}
+
+	.photosGrid__Photo {
+		width: calc(33.3% - 20px);
+		margin-bottom: 28px;
+	}
+
+	@media screen and (min-width: 977px) {
+
+		/* .navigationList {
+			border-top: solid 1px #ccc;
+			border-bottom: none;
+		} */
+
+		.profilePage {
+			max-width: 935px;
+			margin: auto;
+		}
+
+		.photosGrid__Photo {
+			height: 293px;
+		}
+}
