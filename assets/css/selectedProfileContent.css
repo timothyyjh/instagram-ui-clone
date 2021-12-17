@@ -29,9 +29,12 @@ body.showSelectedProfileContent .selectedProfileContent {
 
 .selectedProfileContent__Media__CloseButton {
 	position: absolute;
-	top: 20px;
-	right: 20px;
+	top: 13px;
+	right: 13px;
 	padding: 10px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
 }
 
 .selectedProfileContent__Background {
