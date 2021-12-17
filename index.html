@@ -6,8 +6,75 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>@user Instagram photos and videos</title>
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/selectedProfileContent.css">
+	<link rel="stylesheet" href="assets/css/userDetails.css">
+	<script src="https://kit.fontawesome.com/b3631d0dc8.js" crossorigin="anonymous"></script>
 </head>
 <body>
+	<div class="topNavbar">
+		<button class="topNavbar__InstagramHome">
+			<img alt="Instagram" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png">
+		</button>
+		<button class="topNavbar__SearchBox">
+			<i class="fas fa-search"></i>
+			Search
+		</button>
+		<ul class="topNavbar__Icons">
+			<button class="topNavbar__Icon">
+				<i class="fas fa-home"></i>
+			</button>
+			<button class="topNavbar__Icon">
+				<i class="fas fa-comments"></i>
+			</button>
+			<button class="topNavbar__Icon">
+				<i class="fas fa-compass"></i>
+			</button>
+			<button class="topNavbar__Icon">
+				<i class="fas fa-heart"></i>
+			</button>
+			<button class="topNavbar__Icon">
+				<i class="fas fa-user"></i>
+			</button>
+		</ul>
+	</div>
+	<div class="selectedProfileContent">
+		<div class="selectedProfileContent__MediaFrame">
+			<button class="selectedProfileContent__Media__CloseButton jsSelectedProfileContent__Media__CloseButton">X</button>
+				<img class="selectedProfileContent__Media jsSelectedProfileContent__Media" alt="">
+		</div>
+		<div class="selectedProfileContent__Background jsSelectedProfileContent__Background "></div>
+	</div>
+	<div class="userInfo">
+		<img class="userInfo__Photo" src="https://assets-cdn.nationalgeographic.com/natgeo/static/default.NG.logo.dark.jpg" at="Profile Picture">
+		<div class="userInfo__Identity">
+			natgeo
+			<img class="verifiedIcon" src="https://img.icons8.com/color/50/000000/verified-badge.png"/>
+			<div class="userInfo__Buttons">
+				<button class="userInfo__Button">Message</button>
+				<button class="userInfo__Button">
+					<i class="fas fa-user-alt"></i>
+					<i class="fas fa-check"></i>
+				</button>
+				<button class="userInfo__Button">
+					<i class="fas fa-chevron-down"></i>
+				</button>
+				<button class="userInfo__Ellipsis">
+					<i class="fas fa-ellipsis-h"></i>
+				</button>
+			</div>
+			<div class="userInfo__Stats">
+				<li class=userInfo__Stats__List><div class="boldText">26,038</div> posts</li>
+				<li class=userInfo__Stats__List><div class="boldText">196m</div> followers</li>
+				<li class=userInfo__Stats__List><div class="boldText">136</div> following</li>
+			</div>
+			<div class="userInfo__Bio">
+				<div class="boldText">National Geographic</div>
+				<div>Experience the world through the eyes of National Geographic photographers.</div>
+				<a class="bioLink" href="https://nationalgeographic.like2buy.curalate.com/c/gallery/like2buy?id=71xx76mM&l=like2buy">on.natgeo.com/instagram</a> 
+			</div>
+			</div>
+		</div>
+	</div>
 	<main class="profilePage">
 		<ul class="navigationList">
 			<li class="navigationList__Item active">
@@ -39,40 +106,126 @@
 			<a 
 				href="#" 
 				title="Photo 1"
-				class="photosGrid__Photo" 
+				class="photosGrid__Photo jsPhotosGrid__Photo" 
 				style="background-image: url('https://wallpaperaccess.com/full/1964000.jpg')"
+				data-image-src="https://wallpaperaccess.com/full/1964000.jpg"
+				data-image-alt="Happy Pomeranian"
 			></a>
 			<a 
 				href="#"
 				title="Photo 2"
-				class="photosGrid__Photo" 
+				class="photosGrid__Photo jsPhotosGrid__Photo" 
 				style="background-image: url('https://i.insider.com/50ca49fdecad04d76b00002d?width=1000&format=jpeg&auto=webp')"
+				data-image-src="https://i.insider.com/50ca49fdecad04d76b00002d?width=1000&format=jpeg&auto=webp"
+				data-image-alt="Two White Tigers"
 			></a>
 			<a 
 				href="#"
 				title="Photo 3"
-				class="photosGrid__Photo" 
+				class="photosGrid__Photo jsPhotosGrid__Photo" 
 				style="background-image: url('https://images.unsplash.com/photo-1570481662006-a3a1374699e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGxheWZ1bCUyMGRvbHBoaW58ZW58MHx8MHx8&w=1000&q=80')"
+				data-image-src="https://images.unsplash.com/photo-1570481662006-a3a1374699e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGxheWZ1bCUyMGRvbHBoaW58ZW58MHx8MHx8&w=1000&q=80"
+				data-image-alt="Dolphin Looking Out A Water"
 			></a>
 			<a 
 				href="#" 
-				title="Photo 1"
-				class="photosGrid__Photo" 
-				style="background-image: url('https://wallpaperaccess.com/full/1964000.jpg')"
+				title="Photo 4"
+				class="photosGrid__Photo jsPhotosGrid__Photo" 
+				style="background-image: url('https://i.pinimg.com/originals/a0/6a/d3/a06ad357d5a9e4afb6a0d570873c0a8d.jpg')"
+				data-image-src="https://i.pinimg.com/originals/a0/6a/d3/a06ad357d5a9e4afb6a0d570873c0a8d.jpg"
+				data-image-alt="An Elephant And Its Child"
 			></a>
 			<a 
 				href="#"
-				title="Photo 2"
-				class="photosGrid__Photo" 
-				style="background-image: url('https://i.insider.com/50ca49fdecad04d76b00002d?width=1000&format=jpeg&auto=webp')"
+				title="Photo 5"
+				class="photosGrid__Photo jsPhotosGrid__Photo" 
+				style="background-image: url('https://i.pinimg.com/originals/31/76/f5/3176f589507a426b50099c97f9be6a9b.jpg')"
+				data-image-src="https://i.pinimg.com/originals/31/76/f5/3176f589507a426b50099c97f9be6a9b.jpg"
+				data-image-alt="Swimming Turtle"
 			></a>
 			<a 
 				href="#"
-				title="Photo 3"
-				class="photosGrid__Photo" 
-				style="background-image: url('https://images.unsplash.com/photo-1570481662006-a3a1374699e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGxheWZ1bCUyMGRvbHBoaW58ZW58MHx8MHx8&w=1000&q=80')"
+				title="Photo 6"
+				class="photosGrid__Photo jsPhotosGrid__Photo" 
+				style="background-image: url('https://i.natgeofe.com/k/32a45b33-5468-40e4-8b94-a7489871729b/polar-bear-cub-on-mom_square.jpg')"
+				data-image-src="https://i.natgeofe.com/k/32a45b33-5468-40e4-8b94-a7489871729b/polar-bear-cub-on-mom_square.jpg"
+				data-image-alt="Polar Bear And Its Child"
+			></a>
+			<a 
+				href="#" 
+				title="Photo 7"
+				class="photosGrid__Photo jsPhotosGrid__Photo" 
+				style="background-image: url('https://i.natgeofe.com/n/b7eef2fa-174e-4721-91c5-2e34663c1990/03-world-snake-day-gallery_square.jpg')"
+				data-image-src="https://i.natgeofe.com/n/b7eef2fa-174e-4721-91c5-2e34663c1990/03-world-snake-day-gallery_square.jpg"
+				data-image-alt="A Green Snake"
+			></a>
+			<a 
+				href="#"
+				title="Photo 8"
+				class="photosGrid__Photo jsPhotosGrid__Photo" 
+				style="background-image: url('https://assets-natgeotv.fnghub.com/Shows/73261.jpg')"
+				data-image-src="https://assets-natgeotv.fnghub.com/Shows/73261.jpg"
+				data-image-alt="A Crocodile And Its Child"
+			></a>
+			<a 
+				href="#"
+				title="Photo 9"
+				class="photosGrid__Photo jsPhotosGrid__Photo" 
+				style="background-image: url('https://i.natgeofe.com/n/42dfedf7-cc27-4ffd-9a1f-4e3da0743209/nationalgeographic_1777610_square.jpg')"
+				data-image-src="https://i.natgeofe.com/n/42dfedf7-cc27-4ffd-9a1f-4e3da0743209/nationalgeographic_1777610_square.jpg"
+				data-image-alt="Lion And A Sunset"
+				></a>
+			<a 
+				href="#"
+				title="Photo 10"
+				class="photosGrid__Photo jsPhotosGrid__Photo" 
+				style="background-image: url('https://assets-natgeotv.fnghub.com/Photos/57/144269.jpg')"
+				data-image-src="https://assets-natgeotv.fnghub.com/Photos/57/144269.jpg"
+				data-image-alt="A Giraffe And Its Child"
+			></a>
+			<a 
+				href="#" 
+				title="Photo 11"
+				class="photosGrid__Photo jsPhotosGrid__Photo" 
+				style="background-image: url('https://i.guim.co.uk/img/media/b339572204f03729bbdd7c34133b4ebfd21e27d1/0_31_5216_3130/master/5216.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=46080d667a3f7e5c5e6a7cb768d750d8')"
+				data-image-src="https://i.guim.co.uk/img/media/b339572204f03729bbdd7c34133b4ebfd21e27d1/0_31_5216_3130/master/5216.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=46080d667a3f7e5c5e6a7cb768d750d8"
+				data-image-alt="A Killer Whale Lunging Out Of The Water"
+			></a>
+			<a 
+				href="#"
+				title="Photo 12"
+				class="photosGrid__Photo jsPhotosGrid__Photo" 
+				style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9a/Meerkat_%28Suricata_suricatta%29_Tswalu.jpg')"
+				data-image-src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Meerkat_%28Suricata_suricatta%29_Tswalu.jpg"
+				data-image-alt="Three Meerkats"
 			></a>
 		</section>
 	</main>
+
+	<script>
+		document.querySelectorAll('.jsPhotosGrid__Photo').forEach(elem => elem.addEventListener('click', function(event) {
+			event.preventDefault();
+			
+			document.body.classList.add('showSelectedProfileContent')
+		
+			document.querySelector('.jsSelectedProfileContent__Media').src = this.dataset.imageSrc || '';
+
+			document.querySelector('.jsSelectedProfileContent__Media').alt = this.dataset.imageAlt || '';
+
+			document.querySelector('.jsSelectedProfileContent__Media__CloseButton').focus();
+		}));
+
+		
+
+		document.querySelectorAll('.jsSelectedProfileContent__Media__CloseButton, .jsSelectedProfileContent__Background').forEach(elem => elem.addEventListener('click', function() {
+			document.body.classList.remove('showSelectedProfileContent')
+
+			// to close pre-existing loading media
+			document.querySelector('.jsSelectedProfileContent__Media').src = ""
+
+			document.querySelector('.jsSelectedProfileContent__Media').alt = ""
+		}))
+		
+		</script>
 </body>
 </html>

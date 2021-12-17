@@ -7,7 +7,49 @@
 body {
 	background-color: #fafafa;
 	font-family: Arial, Helvetica, sans-serif;
-	padding-top: 20px;
+	padding-top: 15px;
+}
+
+.topNavbar {
+	border-bottom: solid 1px #ccc;
+	display: flex;
+	padding-bottom: 10px;
+}
+
+.topNavbar__InstagramHome {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	margin-left: 20%;
+}
+
+.topNavbar__SearchBox {
+	margin-left: 14.5%;
+	color: #ccc;
+	background: transparent;
+	border: 1px solid rgba(var(--ca6,219,219,219),1);
+	padding: 10px;
+	width: 16%;
+	text-align: left;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.topNavbar__Icons {
+	display: flex;
+	margin-left: 10%;
+}
+
+.topNavbar__Icon {
+	font-size: 23px;
+	margin-left: 24%;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}	
+
+.topNavbar__Icon:first-child {
+	margin-left: 0;
 }
 
 .navigationList {
@@ -71,7 +113,7 @@ body {
 	} */
 
 	body {
-		padding: 20px;
+		/* padding: 20px; */
 	}
 
 	.navigationList__Item__Button {

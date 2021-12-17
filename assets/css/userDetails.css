@@ -1,0 +1,89 @@
+.userInfo {
+	display: flex;
+	max-width: 935px;
+	margin: auto;
+	/* margin-top: 30px; */
+}
+
+.userInfo__Photo {
+	margin: 30px 100px 70px 70px;
+	display: flex;
+
+	object-fit: cover;
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+}
+
+.userInfo__Identity {
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	font-size: 28px;
+	margin-top: 45px;
+}
+
+.userInfo__Stats {
+	margin: 20px 0 10px 0;
+	font-family: Arial, Helvetica, sans-serif;
+	word-spacing: 2px;
+	font-size: 16px;
+	display: flex;
+}
+
+.userInfo__Stats__List {
+	display: block;
+	list-style: none;
+	margin-right: 50px;
+}
+
+.userInfo__Bio {
+	font-family: Arial, Helvetica, sans-serif;
+	word-spacing: 2px;
+	font-size: 15px;
+	display: block;
+	line-height: 1.6;
+}
+
+.bioLink {
+	color: #00376b;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.boldText {
+	display: inline-flex;
+	font-weight: bold;
+}
+
+.verifiedIcon {
+	width: 4%;
+}
+
+.userInfo__Buttons {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.userInfo__Button {
+	border-radius: 3px;
+	padding: 5px 15px;
+	cursor: pointer;
+	margin-left: 3px;
+	border: 1px solid rgba(var(--ca6,219,219,219),1);
+	background-color: transparent;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.userInfo__Ellipsis {
+	border-radius: 3px;
+	padding: 5px 10px;
+	cursor: pointer;
+	margin-left: 1px;
+	border: none;
+	background-color: transparent;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
